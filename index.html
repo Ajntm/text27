@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    asdaasda
+    <script>
+        function Recursion(depth) {
+            console.log('抱着');
+            if (!depth) {
+                console.log('我的小鲤鱼')
+            } else {
+                Recursion(--depth);  // 递归调用
+            }
+            console.log('的我');
+        }
+
+        console.log('吓得我抱起了');
+        Recursion(2)
+    </script>
 </body>
+
 </html>
